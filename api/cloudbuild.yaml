@@ -1,7 +1,7 @@
 steps:
 - name: node
   entrypoint: npm
-  args: ['install']
+  args: ['install', '--prefix', 'api/', 'api']
 - name: node
   entrypoint: npm
-  args: ['test']
+  args: ['test', 'api']
